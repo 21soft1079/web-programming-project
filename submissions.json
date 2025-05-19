@@ -1,0 +1,26 @@
+[
+  {
+    "name": "bn ",
+    "email": "muhammadsaubanu28@gmail.com",
+    "age": "8",
+    "player": "jg",
+    "membership": "Yes",
+    "membershipType": "Bronze"
+  },
+  {
+    "name": "bello turji",
+    "email": "bello@turji.com",
+    "age": "41",
+    "player": "Tinubu",
+    "membership": "Yes",
+    "membershipType": "Platinum"
+  },
+  {
+    "name": "mudi",
+    "email": "m@k.com",
+    "age": "12",
+    "player": "me",
+    "membership": "No",
+    "membershipType": "None"
+  }
+]

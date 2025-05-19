@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Madrid Fan Club</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #0a0a2a;
+        color: white;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 2rem;
+      }
+      .form-container {
+        background-color: #1e1e2f;
+        padding: 2rem;
+        border-radius: 1rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+        width: 100%;
+        max-width: 500px;
+        margin-top: 2rem;
+      }
+      .btn-gold {
+        background-color: #d4af37;
+        color: black;
+        font-weight: bold;
+      }
+      h1 {
+        color: #ffffff;
+      }
+      .membership-card {
+        border: 1px solid #d4af37;
+        padding: 15px;
+        margin-bottom: 15px;
+        background-color: #1e1e2f;
+        border-radius: 8px;
+        height: 100%;
+      }
+      .membership-card h5 {
+        color: #d4af37;
+        text-align: center;
+      }
+      .membership-card ul {
+        padding-left: 20px;
+      }
+      .membership-card ul li {
+        color: white;
+        margin-bottom: 5px;
+      }
+      .price-badge {
+        background-color: #d4af37;
+        color: black;
+        padding: 3px 8px;
+        border-radius: 10px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="text-center"> Real Madrid Fan Club </h1>
+    <p class="text-center">Join us and show your love for Los Blancos!</p>
+
+    <div class="form-container">
+      <h2 class="text-center mb-4">Fan Registration</h2>
+      <form id="userForm">
+        <div class="mb-3">
+          <label for="name" class="form-label">Your Name:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="age" class="form-label">Your Age:</label>
+          <input
+            type="number"
+            name="age"
+            id="age"
+            class="form-control"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="player" class="form-label">Favorite Player:</label>
+          <input
+            type="text"
+            name="player"
+            id="player"
+            class="form-control"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="example: yourname@gmail.com"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Become a Club Member?</label>
+          <select
+            name="membership"
+            id="membershipSelect"
+            class="form-select"
+            required
+          >
+            <option value="">Select...</option>
+            <option value="Yes">Yes, sign me up!</option>
+            <option value="No">No, just a supporter</option>
+          </select>
+        </div>
+        <div class="mb-3" id="membershipTypeContainer" style="display: none">
+          <label class="form-label">Choose Membership Type</label>
+          <select name="membership-type" class="form-select">
+            <option value="">Select...</option>
+            <option value="Bronze">Bronze - $10</option>
+            <option value="Silver">Silver - $20</option>
+            <option value="Gold">Gold - $35</option>
+            <option value="Platinum">Platinum - $50</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-gold w-100 mt-3">
+          Join the Club
+        </button>
+      </form>
+    </div>
+
+    <div class="container mt-5">
+      <h2 class="text-center mb-4">🎉 Membership Types & Benefits 🎉</h2>
+      <div id="membershipsList" class="row g-4"></div>
+    </div>
+    <footer>REAL MADRID X SAUBANU &#169;</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="form.js"></script>
+  </body>
+</html>

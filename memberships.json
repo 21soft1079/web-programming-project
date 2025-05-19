@@ -1,0 +1,38 @@
+{
+  "Bronze": {
+    "price": "$10",
+    "benefits": [
+      "Monthly Newsletter",
+      "Access to exclusive fan content",
+      "10% discount on fan shop items"
+    ]
+  },
+  "Silver": {
+    "price": "$20",
+    "benefits": [
+      "All Bronze benefits",
+      "Priority ticket booking for local matches",
+      "15% discount on fan shop items",
+      "Birthday greetings from the club"
+    ]
+  },
+  "Gold": {
+    "price": "$35",
+    "benefits": [
+      "All Silver benefits",
+      "Meet and greet with players (once a year)",
+      "Exclusive Gold member merchandise",
+      "20% discount on fan shop items"
+    ]
+  },
+  "Platinum": {
+    "price": "$50",
+    "benefits": [
+      "All Gold benefits",
+      "VIP matchday experience",
+      "Signed jersey from the team",
+      "25% discount on fan shop items",
+      "Access to Platinum member events"
+    ]
+  }
+}
